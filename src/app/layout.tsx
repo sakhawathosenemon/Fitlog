@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Toaster } from "react-hot-toast";
+import { PlanProvider } from "@/context/PlanContext";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/oswald";
 import "./globals.css";
@@ -18,7 +20,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-base font-sans text-white antialiased">
-        {children}
+        {/* PlanProvider is outermost: everything inside can call usePlan() */}
+        <PlanProvider>
+          <main className="min-h-screen">{children}</main>
+          <Toaster
+            position="top-right"
+            toastOptions={{
+              style: {
+                background: "#1a1a1a",
+                color: "#fff",
+                border: "1px solid #2a2a2a",
+              },
+              success: {
+                iconTheme: { primary: "#ccff00", secondary: "#0a0a0a" },
+              },
+            }}
+          />
+        </PlanProvider>
       </body>
     </html>
   );
