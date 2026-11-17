@@ -1,3 +1,11 @@
+import Hero from "@/components/Hero";
+import LibrarySection from "@/components/LibrarySection";
+
 export default function Home() {
-  return <main className="p-6">FitLog</main>;
+  return (
+    <>
+      <Hero />
+      <LibrarySection />
+    </>
+  );
 }
