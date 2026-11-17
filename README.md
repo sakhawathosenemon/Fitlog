@@ -6,14 +6,14 @@
 
 A dark, no-nonsense gym companion: pick a lift, lock it into today's plan, and watch the week's work add up.
 
-[Live Demo](#) · [Report a Bug](../../issues)
+[Live Demo](https://fitlog-taupe-psi.vercel.app/) · [Report a Bug](../../issues)
 
 </div>
 
 ---
 
-> 🔗 **Live link:** _add your deployed URL here_
-> 📦 **Repository:** _add your GitHub URL here_
+> 🔗 **Live link:**(https://fitlog-taupe-psi.vercel.app/)
+> 📦 **Repository:**(https://github.com/sakhawathosenemon/Fitlog)
 
 ## 📖 About
 
