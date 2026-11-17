@@ -146,7 +146,7 @@ export default function MyPlanPage() {
             </p>
             <Link
               href="/"
-              className="mt-6 inline-flex h-10 items-center rounded-md bg-accent px-6 text-xs font-bold uppercase tracking-wide text-black transition hover:brightness-110"
+              className="mt-6 inline-flex h-10 items-center rounded-md bg-accent px-6 text-sm font-semibold text-black transition hover:brightness-110"
             >
               Go to workouts
             </Link>

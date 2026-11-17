@@ -29,6 +29,8 @@ export default function RootLayout({
           <Footer />
           <Toaster
             position="top-right"
+            // Sit below the sticky navbar so the Plan / Saved counters stay visible
+            containerStyle={{ top: 108 }}
             toastOptions={{
               style: {
                 background: "#1a1a1a",
