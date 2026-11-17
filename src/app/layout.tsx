@@ -20,7 +20,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-base font-sans text-white antialiased">
+      <body className="min-h-screen bg-canvas font-sans text-white antialiased">
         {/* PlanProvider is outermost: everything inside can call usePlan() */}
         <PlanProvider>
           <Navbar />

@@ -2,11 +2,11 @@
 
 /* ───────────────────────────────────────────────
    FitLog design tokens (taken from the Figma / Penpot file)
-   Use them as utilities: bg-base, bg-surface, border-line,
+   Use them as utilities: bg-canvas, bg-surface, border-line,
    text-accent, text-muted, font-display …
    ─────────────────────────────────────────────── */
 @theme inline {
-  --color-base: #0f1115;
+  --color-canvas: #0f1115;
   --color-surface: #15171d;
   --color-surface-2: #13161d;
   --color-thumb: #1f232b;
@@ -36,13 +36,13 @@
 }
 
 html {
-  background: var(--color-base);
+  background: var(--color-canvas);
   /* smooth scroll for the "BROWSE WORKOUTS" anchor (#library) */
   scroll-behavior: smooth;
 }
 
 body {
-  background: var(--color-base);
+  background: var(--color-canvas);
   color: #fff;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;

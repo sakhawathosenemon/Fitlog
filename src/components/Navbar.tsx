@@ -28,7 +28,7 @@ export default function Navbar() {
     }`;
 
   return (
-    <header className="sticky top-0 z-40 border-b border-[#1b1f28] bg-base/90 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-[#1b1f28] bg-canvas/90 backdrop-blur">
       <div className="mx-auto grid max-w-[1280px] grid-cols-[1fr_auto] items-center gap-4 px-6 py-3 sm:h-20 sm:grid-cols-[1fr_auto_1fr] sm:py-0">
         {/* Left — logo */}
         <Link
