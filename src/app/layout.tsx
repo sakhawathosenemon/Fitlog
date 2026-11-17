@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 import { PlanProvider } from "@/context/PlanContext";
+import Navbar from "@/components/Navbar";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/oswald";
 import "./globals.css";
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-base font-sans text-white antialiased">
         {/* PlanProvider is outermost: everything inside can call usePlan() */}
         <PlanProvider>
+          <Navbar />
           <main className="min-h-screen">{children}</main>
           <Toaster
             position="top-right"
