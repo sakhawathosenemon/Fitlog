@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* ───────────────────────────────────────────────
+   FitLog design tokens (taken from the Figma / Penpot file)
+   Use them as utilities: bg-base, bg-surface, border-line,
+   text-accent, text-muted, font-display …
+   ─────────────────────────────────────────────── */
+@theme inline {
+  --color-base: #0f1115;
+  --color-surface: #15171d;
+  --color-surface-2: #13161d;
+  --color-thumb: #1f232b;
+  --color-line: #232732;
+  --color-line-soft: #1e2330;
+  --color-line-strong: #374151;
+  --color-accent: #ccff00;
+  --color-accent-tint: #1a2312;
+  --color-muted: #9ca3af;
+  --color-soft: #d1d5db;
+
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Oswald Variable", "Arial Narrow", Impact, sans-serif;
+}
+
+html {
+  background: var(--color-base);
+  /* smooth scroll for the "BROWSE WORKOUTS" anchor (#library) */
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-base);
+  color: #fff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
